@@ -1,38 +1,160 @@
-.App {
+
+.sidebar {
+  position: fixed;
+  z-index: 0;
+  padding-top: 30px;
+  width:80px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+}
+.nav{
+  padding: 0px;
+  margin: 0px;
+  display:flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+.navitems{
+  padding: 10px;
+}
+.nav li{
+  margin:7px;
+  position: relative;
+  transition: 0.2s;
+}
+.nav li:hover{
+  background-color: #95959564;
+  border-radius: 10px;
+}
+li{
+  list-style: none;
+  padding: 10px 0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navname{
+  padding: 3px;
+  font-size: 11px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.licon{
+  color: red;
+  font-size: 35px;
+  padding: 0px 5px;
 }
+.youtube{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.topnav{
+  width: 100%;
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 0;
+  background-color: #000000;
+  padding: 10px;
+  z-index: 1;
+}
+.section div{
+  flex: 1;
+}
+.licon h1{
+  color: #ffffff;
   color: white;
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+}
+.licon i{
+  color: #ff0000;
+  padding: 0px 5px;
+}
+.lname{
+ 
+}
+.logo{
+  padding-left:55px;
+  background: #000000;
+display: flex;
+}
+.profile{
+  display: flex;
+  padding:0x 10px;
+  margin-left: auto;
+}
+.profile i{
+  padding: 0px 10px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  justify-content: center;
+}
+.sinput{
+  width: 500px;
+  padding: 10px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: transparent;
+  border:0.5px solid #959595;
+}
+.sinput:hover{
+  border: 1px solid #eaeaea;
+}
+.sinput:focus{
+  background-color: #eaeaea;
+}
+.profile i{
+  color: #ffffff;
+  font-size: 30px;
+}
+.profile i:hover{
+  background-color: #6d6d6d8a;
+  border-radius: 50%;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.video-card {
+  /* background-color: #fff; */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video-card {
+  width: 320px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.video-grid-container{
+  background-color: #000000;
+}
+.video-card p {
+  font-size: 14px;
+  color: #6d6d6d;
 }
